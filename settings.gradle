@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Travail Session Android Automne 2020"
