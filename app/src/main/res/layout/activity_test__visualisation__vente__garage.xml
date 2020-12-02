@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Test_Visualisation_Vente_Garage">
+
+    <Button
+        android:id="@+id/bRevenirVisualisationVenteGarage"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="10dp"
+        android:text="Revenir" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitreVisualisationVenteGarage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TITRE"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="30dp"
+                android:background="#D1C6C6"
+                android:elevation="10dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tvPhotoCouvertureVisualisationVenteGarage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Photo de couverture"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/ivPhotoCouvertureVisualisationVenteGarage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="#595555"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#D1C6C6"
+                    android:elevation="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDateVisualisationVenteGarage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Date"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tvResultatDateVisualisationVenteGarage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginBottom="35dp"
+                    android:background="#D1C6C6"
+                    android:elevation="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAdresseCompleteVisualisationVenteGarage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Addresse complète"
+                        android:textSize="24sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:background="#BDA0A0"
+                        android:elevation="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvNoAdresseVisualisationVenteGarage2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Numéro d'adresse"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvResultatNoAdresseVisualisationVenteGarage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:background="#BDA0A0"
+                        android:elevation="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvNomRueVisualisationVenteGarage2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Nom de la rue"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvResultatNomRueVisualisationVenteGarage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:background="#BDA0A0"
+                        android:elevation="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvVilleVisualisationVenteGarage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Ville"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvResultatVilleVisualisationVenteGarage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:background="#BDA0A0"
+                        android:elevation="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvCodePostalVisualisationVenteGarage2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Code postal"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvResultatCodePostalVisualisationVenteGarage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginBottom="35dp"
+                    android:background="#D1C6C6"
+                    android:elevation="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCreateurVisualisationVenteGarage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Créateur"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tvResultatCreateurVisualisationVenteGarage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginBottom="35dp"
+                    android:background="#D1C6C6"
+                    android:elevation="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCategorieVisualisationVenteGarage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Catégorie"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tvResultatCategorieVisualisationVenteGarage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="#595555"
+                android:elevation="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvPhotosVentesVisualisationVentesGarages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Photos de ventes"
+                    android:textSize="24sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:background="#D1C6C6">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="30dp"
+                            android:background="#D1C6C6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvTextePhotoVente1VisualisationVenteGarage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Photo de vente #1"
+                                android:textSize="24sp" />
+
+                            <ImageView
+                                android:id="@+id/ivPhotoVente1VisualisationVenteGarage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:srcCompat="@tools:sample/avatars" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="30dp"
+                            android:background="#D1C6C6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvTextePhotoVente2VisualisationVenteGarage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Photo de vente #2"
+                                android:textSize="24sp" />
+
+                            <ImageView
+                                android:id="@+id/ivPhotoVente2VisualisationVenteGarage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:srcCompat="@tools:sample/avatars" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="30dp"
+                            android:background="#D1C6C6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvTextePhotoVente3VisualisationVenteGarage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Photo de vente #3"
+                                android:textSize="24sp" />
+
+                            <ImageView
+                                android:id="@+id/ivPhotoVente3VisualisationVenteGarage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:srcCompat="@tools:sample/avatars" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bSuivreVenteGarageVisualisationVenteGarage"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="#4A8145"
+                android:elevation="10dp"
+                android:text="Suivre cette vente de garage" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

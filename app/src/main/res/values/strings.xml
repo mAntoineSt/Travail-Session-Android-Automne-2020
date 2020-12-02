@@ -2,4 +2,15 @@
     <string name="app_name">Travail Session Android Automne 2020</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Pour le spinner-->
+    <string-array name="Spinner_items">
+        <item>Jardinage</item>
+        <item>Electromenager</item>
+        <item>Electronique</item>
+        <item>Mecanique</item>
+        <item>Objets dinterieurs</item>
+        <item>Objets dexterieurs</item>
+    </string-array>
+    <string name="title_activity_google__maps__adresse">Map</string>
 </resources>

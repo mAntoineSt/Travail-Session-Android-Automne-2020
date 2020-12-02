@@ -10,11 +10,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:layout_margin="15dp"
         android:orientation="horizontal">
 
@@ -23,21 +18,73 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="center"
             android:text="Hello garage" />
     </LinearLayout>
 
-    <LinearLayout
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="15dp"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rcCategories"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent">
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/bJardinage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="Jardinage" />
+
+            <Button
+                android:id="@+id/bElectromenager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="Électroménager" />
+
+            <Button
+                android:id="@+id/bElectronique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="Électronique" />
+
+            <Button
+                android:id="@+id/bMecanique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="Mécanique" />
+
+            <Button
+                android:id="@+id/bObjetsInterieurs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="Objets d'intérieurs" />
+
+            <Button
+                android:id="@+id/bObjetsExterieurs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="Objets d'extérieurs" />
+        </LinearLayout>
+    </HorizontalScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"

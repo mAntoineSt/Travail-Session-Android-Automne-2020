@@ -8,9 +8,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class Recherche extends Fragment {
+public class Ventes_garages_suivies extends Fragment {
 
-    public Recherche() {
+
+
+    public Ventes_garages_suivies() {
         // Required empty public constructor
     }
 
@@ -18,13 +20,12 @@ public class Recherche extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_recherche, container, false);
+        return inflater.inflate(R.layout.fragment_ventes_garages_suivies, container, false);
     }
 }

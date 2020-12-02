@@ -21,32 +21,39 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/bVerifInfosComptes"
+            android:id="@+id/bVerifInfosComptesParametres"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:text="Vérifier les informations du compte" />
 
         <Button
-            android:id="@+id/bVentesGaragesSuivies"
+            android:id="@+id/bVentesGaragesSuiviesParametres"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:text="Voir les ventes de garages suivies" />
 
         <Button
-            android:id="@+id/bMesVentesGarages"
+            android:id="@+id/bMesVentesGaragesParametres"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:text="Voir mes ventes de garages" />
 
         <Button
-            android:id="@+id/bCreerVenteGarage"
+            android:id="@+id/bCreerVenteGarageParametres"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:text="Créer une vente de garage" />
+
+        <Button
+            android:id="@+id/bSeDeconnecterParametres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Se déconnecter" />
     </LinearLayout>
 
 </LinearLayout>
