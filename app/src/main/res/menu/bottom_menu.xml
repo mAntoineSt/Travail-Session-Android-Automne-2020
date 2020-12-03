@@ -10,6 +10,10 @@
         android:icon="@drawable/ic_action_ajouter"
         android:title="Créer vente de garage" />
     <item
+        android:id="@+id/mesVentesGarages"
+        android:icon="@drawable/ic_action_mes_ventes_garage"
+        android:title="Mes ventes de garage" />
+    <item
         android:id="@+id/ventesGaragesSuivies"
         android:icon="@drawable/ic_action_suivies"
         android:title="Ventes de garages suivies" />

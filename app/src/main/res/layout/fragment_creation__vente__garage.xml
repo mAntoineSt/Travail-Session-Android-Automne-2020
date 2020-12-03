@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".test">
+    tools:context=".Creation_Vente_Garage">
 
     <Button
         android:id="@+id/bRevenirCreationVenteGarage"
@@ -228,7 +227,7 @@
                     android:gravity="center"
                     android:text="Titre"
                     android:textSize="18sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/etTitreCreationVenteGarage"
@@ -257,7 +256,7 @@
                     android:gravity="center"
                     android:text="Date"
                     android:textSize="18sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/tvChoixDateCreationVenteGarage"
@@ -285,7 +284,7 @@
                     android:gravity="center"
                     android:text="Adresse"
                     android:textSize="18sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/tvNoAdresse"
@@ -361,13 +360,14 @@
                     android:gravity="center"
                     android:text="Créateur"
                     android:textSize="18sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/etCreateurCreationVenteGarage"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:enabled="false"
                     android:gravity="left"
                     android:inputType="textPersonName" />
             </LinearLayout>
@@ -389,7 +389,7 @@
                     android:gravity="center"
                     android:text="Catégorie"
                     android:textSize="18sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <Spinner
                     android:id="@+id/sCategorieCreationVenteGarage"

@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -19,14 +20,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Test_Visualisation_Vente_Garage">
+        <activity android:name=".Creation_Compte"></activity>
+        <activity android:name=".Retire_tout" />
+        <activity android:name=".Connexion" />
+        <activity android:name=".Accueil">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Accueil"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -42,11 +45,8 @@
         <activity
             android:name=".Google_Maps_Adresse"
             android:label="@string/title_activity_google__maps__adresse" />
-        <activity android:name=".test">
-
-        </activity>
         <activity android:name=".Visualisation_vente_garage" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

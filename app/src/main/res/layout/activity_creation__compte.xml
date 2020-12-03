@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Creation_Compte">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbMenuHautCreationCompte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:clickable="true"
+        android:minHeight="?attr/actionBarSize"
+        android:onClick="RetourConnexion"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:title="Inscris toi!"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+        app:titleTextColor="#FFFFFF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleTint="#FFFFFF">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietPrenomCreationCompte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Prenom"
+                        android:inputType="text"
+                        android:padding="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleTint="#FFFFFF">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietNomCreationCompte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nom"
+                        android:inputType="text"
+                        android:padding="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleTint="#FFFFFF">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietCourrielCreationCompte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Courriel"
+                        android:inputType="textWebEmailAddress"
+                        android:padding="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorPrimary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietMdpCreationCompte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mot de passe"
+                        android:inputType="textPassword"
+                        android:padding="15dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorPrimary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietConfirmationMdpCreationCompte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Confirmation du mot de passe"
+                        android:inputType="textPassword"
+                        android:padding="15dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietNoTelephoneCreationCompte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Numéro de téléphone"
+                        android:inputType="text|phone" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/bConfirmationInscriptionCreationCompte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="S'inscrire"
+                    android:textColor="@color/design_default_color_background"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

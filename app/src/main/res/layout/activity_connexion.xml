@@ -2,19 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/colorPrimary"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Connexion">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/tbMenuHautConnexion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:clickable="true"
         android:minHeight="?attr/actionBarSize"
+        android:onClick="retourAccueil"
         android:theme="?attr/actionBarTheme"
         app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
         app:title="Connecte toi!"
@@ -33,6 +33,7 @@
             app:passwordToggleTint="#FFFFFF">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietCourrielConnexion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Courriel"
@@ -47,6 +48,7 @@
             app:passwordToggleTint="@color/colorPrimary">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietMdpConnexion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Mot de passe"
@@ -55,16 +57,17 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/bConnexionConnexion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorPrimary"
+            android:elevation="10dp"
             android:text="Connexion"
             android:textColor="@color/design_default_color_background"
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tvMdpOublieConnexion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -73,6 +76,20 @@
             android:textColor="@color/colorAccent"
             android:textSize="15sp" />
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/tvCreationCompteConnexion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:background="@color/colorPrimary"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Se créer un compte"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
 
+    </LinearLayout>
 </LinearLayout>

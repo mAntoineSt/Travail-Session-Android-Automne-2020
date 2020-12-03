@@ -19,7 +19,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Hello garage" />
+            android:text="Hello garage"
+            android:textSize="24sp" />
     </LinearLayout>
 
     <HorizontalScrollView
